@@ -1,0 +1,39 @@
+.div
+{
+    border:2px solid;
+}
+img
+{
+    height:80%;
+    width:90%;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.container
+{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+p{
+    font-size:2rem;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    text-align:center;
+}
+@media(max-width:1300px)
+{
+    .container
+    {
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+@media(max-width:800px)
+{
+    .container
+    {
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+}
